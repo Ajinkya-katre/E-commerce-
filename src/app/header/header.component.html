@@ -1,0 +1,14 @@
+<nav class="nav" (mouseenter)="showDiv=true" (mouseleave)="showDiv=false" >
+    <h1>E-Comm</h1>
+    <div class="nav-search" *ngIf="showDiv">
+        <input type="text" placeholder="Search Product" />
+        <button>Search</button>
+    </div>
+    <ul>
+        <li><a routerLink="seller-auth">Seller</a></li>
+        <li><a routerLink="">Home</a></li>
+        <li><a href="#">Login</a></li>
+        <li><a href="#">Cart</a></li>
+
+    </ul>
+</nav>
